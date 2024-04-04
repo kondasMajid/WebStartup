@@ -9,7 +9,7 @@ This project is a basic Node.js CLI application that sets up a simple server usi
 
 ## Project Structure
 
-The project structure includes the following directories and files:
+The project structure will includes the following directories and files after generated:
 - **src**: Contains the main script file  `index.js` .
 - **public**: Contains  `index.html`  and  `style.css`  files for the web server.
 
@@ -18,10 +18,10 @@ The project structure includes the following directories and files:
 1. Clone the repository.
 2. Install dependencies using  `npm install` .
 
+
 ## Usage
 
-Run the CLI application using the following command:
-node index.js
+Run the CLI command by `start-setup` to initiallize the setup.
 Access the server at  `http://localhost:3030/`  to view the generated content dynamically.
 
 
