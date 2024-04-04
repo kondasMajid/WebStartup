@@ -11,7 +11,8 @@
     "CLI"
   ],
   "bin": {
-    "start-setup": "./index.js"
+    "setup": "./setup.js",
+    "start": "./index.js"
   },
   "author": "Kondas Majid",
   "license": "MIT",
