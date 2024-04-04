@@ -13,11 +13,16 @@ function createProjestStructure(){
         'public' : ['index.html','style.css', 'script.js']
     }
     Object.entries(directories).forEach(([dir, files]) => {
-        fs.mkdirSync(dir, {recursive: true});
-        files.forEach(file => fs.writeFileSync(`${dir}/${file}`, ''))
+        try {
+             fs.mkdirSync(dir, {recursive: true});
+        files.forEach(file => fs.writeFileSync(`${dir}/${file}`, ''));
+        } catch (err) {
+            console.error(`Error creating directory of files ${err}`);
+        }
+       
+        console.log('Page structure created successfully');
     })
 
-    console.log('Page structure created successfully');
 }
 
 

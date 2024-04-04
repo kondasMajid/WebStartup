@@ -16,14 +16,14 @@ const port = 3030;
 //   }
   
   // Create a server and listen on port 3030
-  const myServer = http.createServer((req, res) => {
-    if (req.url === '/') {
-      const dynamicHtml = generateHtmlContent(); // Generate content
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(dynamicHtml);  // Serve the generated content
-      res.end();
-    }
-  });
+//   const myServer = http.createServer((req, res) => {
+//     if (req.url === '/') {
+//       const dynamicHtml = generateHtmlContent(); // Generate content
+//       res.writeHead(200, { 'Content-Type': 'text/html' });
+//       res.write(dynamicHtml);  // Serve the generated content
+//       res.end();
+//     }
+//   });
 
 
 app.get('/', (req, res) => {
@@ -32,6 +32,6 @@ app.get('/', (req, res) => {
 })
 
   
-myServer.listen(port, () => {
+app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 });
