@@ -4,13 +4,14 @@
 const fs = require('fs'); 
 const http = require('http');
 const express = require('express');
+const network = require('')
 
 
 const app = express();
 
 const cli = {
     'src': ['index.js'], 
-    'public' : ['index.html','style.css']
+    'public' : ['index.html','style.css', 'script.js']
 }
 
 Object.entries(cli).forEach(([dir, files]) => {
