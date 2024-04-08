@@ -3,11 +3,11 @@
 const fs = require('fs');
 const http = require('http');
 
-// This section defines a cli object to specify the directories and files to create. 
+//This section defines a cli object to specify the directories and files to create. 
 //It iterates through the object to create the src and public directories with empty 
 //files (index.js, index.html, style.css, and script.js).
 
-function createProjestStructure(){
+function createProjectStructure(){
     const directories = {
         'src': ['index.js'], 
         'public' : ['index.html','style.css', 'script.js']
@@ -45,37 +45,7 @@ function generateHtmlContent(){
     return htmlContent;
     
 }
-// console.log('Projects Structure created succesffuly')
 
+module.exports = { createProjectStructure, generateHtmlContent}; 
 
-
-
-module.exports = { createProjestStructure, generateHtmlContent}; 
-
-createProjestStructure();
-
-// const myServer = http.createServer((req, res) => {
-//     if (req.url === '/') {
-//         fs.readFile('public/index.html', (err, data) => {
-//             if (err) {
-//                 res.writeHead(500);
-//                 res.end('Error loading html');
-//             }else{
-//                  res.writeHead(200, {'Content-Type': 'text/html'});
-//                 res.write(data)
-//                 // res.write('<h1>Hello World</h1>');
-//                  res.end();
-//             }
-//         })
-
-//         fs.writeFile('public/index.html', htmlContent, err => {
-//             if (err) {
-//                 console.error('Error creating index.html', err)
-//             }else{
-//                 console.log('Index page created successffully');
-//             }
-//         })
-//     }
-   
-    
-// });
+createProjectStructure();

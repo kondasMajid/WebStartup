@@ -1,7 +1,7 @@
 {
-  "name": "cli-basic",
+  "name": "web-startup",
   "version": "1.0.0",
-  "description": "A common NodeJS CLI App",
+  "description": "A common NodeJS CLI Web Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
