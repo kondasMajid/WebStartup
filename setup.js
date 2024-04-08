@@ -30,16 +30,16 @@ function generateHtmlContent(){
     const htmlContent = `
         <!DOCTYPE html>
         <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website Title</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-        <h1>Welcome to My Website!</h1>
-        <p>This content was generated dynamically!</p>
-        </body>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>My Website Title</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>Welcome to My Website!</h1>
+                <p>This content was generated dynamically!</p>
+            </body>
         </html>
     `;
     return htmlContent;
@@ -52,7 +52,7 @@ function generateHtmlContent(){
 
 module.exports = { createProjestStructure, generateHtmlContent}; 
 
-
+createProjestStructure();
 
 // const myServer = http.createServer((req, res) => {
 //     if (req.url === '/') {
